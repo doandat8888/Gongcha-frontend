@@ -1,0 +1,45 @@
+.product-page {
+    .menu-banner {
+        padding: 15.5rem 0 18rem 0;
+        background-image: url("../../assets/img/menu-banner.jpg") !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        @include mobile {
+            background-size: cover;
+        }
+        .menu-banner-body {
+            float: left;
+            height: fit-content;
+            margin: 0 11% 0 11%;
+            display: block;
+            @include mobile {
+                margin: 2rem;
+            }
+            .menu-banner-title {
+                font-size: 4rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                margin-bottom: 1.1rem;
+            }
+            .menu-banner-content {
+                display: inline-block;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .product-page-body {
+        padding: 7rem 11% 0 11%;
+        background-color: $yellow_light;
+        @include mobile {
+            padding: 0 2rem;
+        }
+        .category {
+            padding: 2rem 0;
+            border-top: 2px solid $text_black;
+            border-bottom: 2px solid #dddddd;
+        }
+    }
+}

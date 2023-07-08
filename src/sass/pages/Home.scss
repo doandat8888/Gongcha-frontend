@@ -1,0 +1,83 @@
+.home-page {
+    width: 100%;
+    font-size: 3rem;
+    
+    .home-page-body {
+        width: 100%;
+        .top-area {
+            margin: 0;
+        }
+        .bottom-area {
+            margin: 0 11% 0 11%;
+            .search-shop-area {
+                display: flex;
+                @include mobile {
+                    display: block;
+                }
+                .img {
+                    @include mobile {
+                        width: 100%;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+            .step-area {
+                display: flex;
+                @include mobile {
+                    display: block;
+                }
+            }
+
+            .sale-new-area {
+                display: flex;
+                .sale-area {
+                    width: 33.33%;
+                    @include mobile {
+                        width: 100%;
+                    }
+                }
+
+                .new-area {
+                    width: 33.33%;
+                    @include mobile {
+                        width: 100%;
+                    }
+                }
+
+                @include mobile {
+                    display: block;
+                }
+            }
+
+            @include mobile {
+                margin: 0 2% 0 2%;
+            }
+        }
+
+        .tea-banner {
+            text-align: center;
+            padding: 4rem 0 4rem 0;
+            background-image: url("../../assets/img/banner-tra.jpg") !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            .tea-banner-img {
+                width: 100%;
+            }
+            .title {
+                color: $main_color;
+            }
+            .learn-more-btn {
+                margin-top: 3rem;
+                width: 15%;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include mobile {
+                    width: 30%;
+                }
+            }
+        }
+        
+    }
+}

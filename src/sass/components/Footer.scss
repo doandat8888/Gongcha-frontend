@@ -1,0 +1,68 @@
+.footer {
+    display: flex;
+    @include mobile {
+        display: block;
+    }
+    .left {
+        width: 33.33%;
+        background-color: $brown;
+        padding: 4.5rem 1.5rem;
+        text-align: right;
+        @include mobile {
+            width: 100%;
+            text-align: center;
+        }
+        .footer-img {
+            width: 40%;
+        }
+        .content {
+            color: $text_white;
+            font-size: 1rem;
+        }
+    }
+
+    .right {
+        width: 66.67%;
+        padding: 4rem;
+        @include mobile {
+            width: 100%;
+        }
+        background-color: $yellow_white;
+        .right-page-list {
+            display: flex;
+            justify-content: space-between;
+            @include mobile {
+                display: block !important;
+            }
+            .right-page-item {
+                font-weight: 500;
+                padding-right: 2rem;
+                font-size: 1.6rem;
+                border-right: 1px solid $text_black;
+                text-decoration: none;
+                color: $text_black;
+                &:hover {
+                    color: $main_color;
+                }
+
+                @include mobile {
+                    border: none;
+                    width: 100% !important;
+                }
+            }
+        }
+        .info-email {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            .icon {
+                font-size: 2rem;
+            }
+            .content {
+                font-size: 1.6rem;
+                margin-left: 0.6rem;
+                color: $main_color;
+            }
+        }
+    }
+}

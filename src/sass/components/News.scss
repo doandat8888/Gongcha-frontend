@@ -1,0 +1,45 @@
+.new {
+    .new-img {
+        width: 100%;
+    }
+    .new-content {
+        padding: 2rem 2.5rem 2rem 2.5rem;
+        margin-top: 1rem;
+        color: $main_color;
+        display: flex;
+        .left {
+            font-size: 2.4rem;
+            width: fit-content;
+            font-weight: 500;
+            width: 80%;
+            cursor: pointer;
+
+            &:hover {
+                color: $text_black;
+            }
+        }
+
+        .right {
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            .right-content {
+                padding-right: 0.4rem;
+            }
+            .right-icon {
+                width: 10%;
+            }
+
+            &:hover {
+                color: $text_black;
+            }
+        }
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}

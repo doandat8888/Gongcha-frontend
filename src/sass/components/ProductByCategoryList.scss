@@ -1,0 +1,49 @@
+.product-by-category-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .product-by-category-item {
+        position: relative;
+        padding: 2rem 4.5rem;
+        text-align: center;
+        width: 33.33%;
+        @include mobile {
+            width: 50%;
+            padding: 0;
+        }
+        .product-img {
+            width: 100%;
+        }
+        .product-name {
+            font-size: 2rem;
+            color: $main_color;
+            &:hover {
+                opacity: 0.8;
+            }
+            @include mobile {
+                font-size: 1.6rem;
+            }
+        }
+        .view-detail-btn {
+            position: absolute;
+            cursor: pointer;
+            z-index: 10000;
+            top: 50%;
+            left: 50%;
+            width: 156px;
+            height: 156px;
+            margin: -78px 0 0 -78px;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            transition: all .2s;
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        
+    }
+
+    
+    
+}

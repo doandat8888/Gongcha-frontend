@@ -1,0 +1,100 @@
+.product-detail {
+    width: 100%;
+    .product-detail-body {
+        background-color: $yellow_light;
+        padding: 2rem 4rem;
+        display: flex;
+        @include mobile {
+            display: block;
+            padding: 2rem 1rem;
+        }
+        .left {
+            width: 35%;
+            @include mobile {
+                width: 100%;
+            }
+            text-align: center;
+            .left-txt {
+                font-size: 1.4rem;
+                font-style: italic;
+                font-weight: 400;
+            }
+            .product-img {
+                width: 70%;
+            }
+        }
+        .right {
+            .right-txt {
+                font-size: 1.4rem;
+                font-style: italic;
+                font-weight: 400;
+            }
+            width: 65%;
+            @include mobile {
+                width: 100%;
+            }
+            .product-name {
+                font-size: 2.4rem;
+                margin: 3.2rem 0 1.2rem 0;
+            }
+
+            .product-description {
+                font-size: 1.4rem;
+                font-weight: 400;
+                margin: 3rem 0;
+            }
+
+            .product-info-txt {
+                font-size: 2.4rem;
+                margin: 2rem 0;
+                color: #333333;
+            }
+
+            .info-product-detail {
+                margin: 2rem 0;
+                tbody {
+                    .ttr {
+                        .ttr-item {
+                            width: fit-content;
+                            padding: 0.8rem;
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            border-bottom: 1px solid #ddd;
+                            border-left: 1px solid #ddd;
+                            border-top: 1px solid #ddd;
+                            color: $main_color;
+                            font-weight: bold;
+                        }
+                        :last-child {
+                            border-right: 1px solid #ddd;
+                        }
+                    }
+                    .product-name {
+                        
+                        .product-name-col {
+                            font-size: 1.4rem;
+                            border-left: 1px solid #ddd;
+                            border-bottom: 1px solid #ddd;
+                            padding: 0 0.8rem;
+                            font-weight: 400;
+                        }
+                    }
+                    .ttb {
+                        .ttr-item {
+                            width: fit-content;
+                            padding: 0.8rem;
+                            font-size: 1.4rem;
+                            font-weight: 400;
+                            border-left: 1px solid #ddd;
+                            border-bottom: 1px solid #ddd;;
+                        }
+                        :last-child {
+                            border-right: 1px solid #ddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

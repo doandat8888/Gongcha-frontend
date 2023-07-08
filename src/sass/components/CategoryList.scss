@@ -1,0 +1,27 @@
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .category-item {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        @include mobile {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .category-item-name {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-left: 0.6rem;
+
+            &:hover {
+                color: $main_color;
+                border-bottom: 1px solid $main_color;
+            }
+        }
+    }
+}

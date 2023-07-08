@@ -1,0 +1,103 @@
+.method-good-tea {
+    padding: 4rem 11%;
+    background-color: $yellow_light;
+    .top {
+        width: 100%;
+        display: flex;
+        @include mobile {
+            display: block;
+        }
+        .left {
+            width: 33.33%;
+            @include mobile {
+                width: 100%;
+            }
+            .title {
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 2.4rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+            }
+            .img {
+                width: 70%;
+            }
+        }
+
+        .right {
+            width: 66.67%;
+            @include mobile {
+                width: 100%;
+            }
+            .type-of-tea-list {
+                display: flex;
+                @include mobile {
+                    display: block;
+                }
+                .type-of-tea-item {
+                    margin-right: 0.4rem;
+                    font-size: 1.6rem;
+                    padding: 1.4rem 0.4rem;
+                    cursor: pointer;
+                    &:hover {
+                        color: $main_color;
+                        border-bottom: 2px solid $main_color;
+                    }
+
+                    &.active-border {
+                        color: $main_color;
+                        border-bottom: 2px solid $main_color;
+                    }
+                    @include mobile {
+                        width: 100% !important;
+                    }
+                }
+            }
+
+            .type-of-tea-content {
+                .type-of-tea-description {
+                    .title {
+                        margin: 2rem 0;
+                        display: none;
+                        font-size: 2.4rem;
+                        color: $main_color;
+                        &.active {
+                            display: block;
+                        }
+                    }
+                    .type-of-tea-content-txt {
+                        display: none;
+                        font-size: 1.4rem;
+                        line-height: 2.4rem;
+                        &.active {
+                            display: block;
+                        }
+                    }
+                }
+                .view-menu-btn {
+                    width: 26%;
+                    margin: 2rem 0;
+                    @include mobile {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        margin-top: 4rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .instagram-img {
+            width: 25%;
+            @include mobile {
+                width: 50%;
+            }
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
